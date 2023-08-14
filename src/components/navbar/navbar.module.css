@@ -1,0 +1,33 @@
+.container {
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 60px;
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 22px;
+}
+
+.links {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.login, .cart {
+  padding: 5px;
+  border: 1px solid black;
+  /* background-color: #53c28b; */
+  background-color: white;
+  cursor: pointer;
+  width: 2.1rem;
+  border-radius: 50%;
+}
+
+.btnWrap{
+  display: flex;
+  gap: 20px;
+}

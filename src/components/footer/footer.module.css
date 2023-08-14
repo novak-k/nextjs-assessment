@@ -1,0 +1,107 @@
+.container {
+  width: 100%;
+  font-size: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  
+  position: relative;
+
+  background-color: #000000;
+  color: white;
+  padding: 0 60px;
+  padding-bottom: 60px;
+}
+
+.logo {
+  font-weight: 700;
+  font-size: 36px;
+  margin: 0 auto;
+  padding: 20px 0;
+}
+
+.line{
+  display: block;
+  position: absolute;
+  top: 90px;
+  width: 90%;
+  height: 1px;
+  background-color: white;
+}
+
+.icon {
+  margin: 0 10px;
+}
+
+.textContainer{
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  /* font-family: var(--font-poppins); */
+  /* font-weight: 400; */
+}
+
+.textTitle{
+  font-size: 18px;
+  line-height: 26px;
+  font-weight: 600;
+  text-align: left;
+}
+
+.textItem{
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 16px;
+}
+
+.reachUsContainer, .companyContainer, .legalContainer, 
+.quickContainer, .joinContainer {
+  display: flex;
+  flex-direction: column;
+}
+
+.reachUsContainer{
+  width: 300px;
+}
+
+.joinContainer{
+  gap: 16px;
+  padding: 0 12px;
+
+  width: 300px;
+  border-radius: 10%;
+  background-color: #131313;
+}
+
+.textInputWrapper{
+  border-radius: 4%;
+}
+
+.textInput{
+  width: 170px;
+  height: 40px;
+
+  background-color: #1E1E1E;
+  color: white;
+  border: none;
+
+  padding: 10px;
+}
+
+.textInputBtn{
+  width: 100px;
+  height: 40px;
+
+  background-color: #000000;
+  color: white;
+  border: none;
+  cursor: pointer;
+
+  padding: 10px;
+}
+
+.textJoin{
+  font-size: 13px;
+  opacity: 0.6;
+}
+
