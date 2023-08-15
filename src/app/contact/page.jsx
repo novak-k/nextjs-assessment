@@ -32,6 +32,11 @@ const Contact = () => {
               <Image src="/discord.svg" width={15} height={15} className={styles.icon} alt="discord" />
             </a>
           </div>
+
+          <div className={styles.elipsWrapper}> 
+            <Image src="/elipsBig.svg" width={169} height={169} alt="elipsBig" className={styles.elipsBig}/>
+            <Image src="/elipsSm.svg" width={138} height={138} alt="elipsSm" className={styles.elipsSm}/>
+          </div>
         </div>
 
         <div className={styles.formContainer}>
@@ -111,6 +116,10 @@ const Contact = () => {
 
             <div className={styles.formBtnWr}>
               <Button url="#" text="Send Message"/>
+            </div>
+
+            <div className={styles.letterWr}>
+              <Image src="/letter.svg" width={240} height={220} alt="letter" className={styles.letter}/>
             </div>
           </form>
         </div>
