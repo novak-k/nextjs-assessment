@@ -2,9 +2,156 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 16px;
+  padding: 0 60px;
 }
 
 .title {
   font-size: 40px;
   font-weight: 700;
+}
+
+.desc{
+  font-size: 18px; 
+  font-weight: normal; 
+  color: #717171;
+}
+
+.contactContainer{
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+
+  height: 400px;
+  width: 480px;
+
+  background-color: black;
+  color: white;
+
+  padding: 30px 20px;
+  border-radius: 10px;
+}
+
+.contactTitle{
+  font-size: 28px;
+  line-height: 40px;
+  font-weight: 600;
+}
+
+.contactDesc{
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
+  color: #C9C9C9;
+}
+
+.socialContainer{
+  display: flex;
+  gap: 16px;
+}
+
+.link{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background-color: #1B1B1B;
+  padding: 6px;
+}
+
+.link:nth-child(2n){
+  background-color: white;
+}
+
+.wrapper{
+  display: flex;
+}
+
+.formContainer {
+  height: 400px;
+  width: 600px;
+
+  padding: 30px 20px;
+  border-radius: 10px;
+  box-sizing: border-box;
+
+  background-color: #FFFFFF;
+  color: black;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 20px;
+
+  font-size: 14px;
+  line-height: 20px;
+}
+
+.inputWrapper {
+  display: flex;
+  gap: 20px;
+}
+
+.inputGroup {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.inquiryTitle {
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 700;
+}
+
+.inquiryWrapper{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.textAreaWrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.input, .textArea{
+  padding: 2px;
+  outline: none;
+  width: 100%;
+  border: none;
+  border-bottom: 1px solid black;
+}
+
+.label {
+  padding: 2px;
+}
+
+.labelMessage, .textArea {
+  padding: 2px;
+  color: #8D8D8D;
+  font-family: inherit;
+}
+
+.checkboxRound {
+  width: 1.3em;
+  height: 1.3em;
+  background-color: white;
+  border-radius: 50%;
+  border: 1px solid #ddd;
+  appearance: none;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.checkboxRound:checked {
+  background-color: black;
+  color: white;
+}
+
+.formBtnWr{
+  display: flex;
+  align-self: flex-end;
 }

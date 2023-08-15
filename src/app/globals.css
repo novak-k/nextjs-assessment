@@ -21,13 +21,13 @@ a {
 }
 
 .ligth{
-  background-color: white;
+  background-color: #F5F5F5;
   color: black;
 }
 
 .dark{
   background-color: black;
-  color: white;
+  color: #F5F5F5;
 }
 
 .container {
