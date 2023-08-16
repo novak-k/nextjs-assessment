@@ -1,10 +1,11 @@
 'use client'
 
-import React from 'react'
+import React, { useState } from 'react'
 import Link from 'next/link'
 import styles from './navbar.module.css'
 import DarkModeToggle from '../darkModeToggle/darkModeToggle'
 import Image from 'next/image'
+import MobileMenu from '../mobileMenu.jsx/mobileMenu'
 
 const links = [
   {
@@ -40,6 +41,16 @@ const links = [
 ]
 
 const Navbar = () => {
+  const [burgerActive, setBurgerActive] = useState(false);
+
+  const toggleBurger = () => {
+    setBurgerActive(prev => !prev);
+  };
+
+  const closeMobileMenu = () => {
+    setBurgerActive(true);
+  };
+
   return (
     <div className={styles.container}>
      <Link href='/' className={styles.logo}>Logo Here</Link>
@@ -53,17 +64,20 @@ const Navbar = () => {
       <div className={styles.btnWrap}>
           <button 
           className={styles.login}
-          // onClick={() => {console.log('login')}}
         >
           <Image src={'/user.svg'} width={18} height={18} className={styles.icon} alt="user" />
         </button>
 
         <button 
           className={styles.cart}
-          // onClick={() => {console.log('cart')}}
         >
         <Image src={'/cart.svg'} width={18} height={18} className={styles.icon} alt="cart" />
         </button>
+        
+        <div className={styles.burger} onClick={toggleBurger}>
+          <div className={styles['burger-icon']}></div>
+            {burgerActive && <MobileMenu links={links} onClose={closeMobileMenu}/>}
+        </div>
       </div>
   
     </div>

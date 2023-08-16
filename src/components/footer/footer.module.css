@@ -36,8 +36,6 @@
 .textContainer{
   display: flex;
   gap: 60px;
-  /* font-family: var(--font-poppins); */
-  /* font-weight: 400; */
 }
 
 .textTitle{

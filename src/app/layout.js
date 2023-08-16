@@ -11,10 +11,7 @@ export const metadata = {
 
 const inter = Inter({
   subsets: ['latin'],
-  // variable: '--font-inter',
 })
-
-// const poppins = Poppins({
 //   subsets: ['latin'],
 //   variable: '--font-poppins',
 //   weight: ["400", "500", "600", "700"],
@@ -36,18 +33,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <link rel="icon" href="/favicon.ico" sizes="any" />
-        {/* <style>{inter.style}</style>
-        <style>{poppins.style}</style> */}
-
-        {/* {googleFonts.map((poppins, inter) => (
-          <div key={index}>
-            <style>{inter.style}</style>
-            <style>{poppins.style}</style>
-          </div>
-        ))} */}
-
       </head>
-      {/* <body className={`${inter.variable} ${poppins.variable}`}> */}
       <body className={inter.className} suppressHydrationWarning={true}>
         <ThemeProvider>
           <div className="container">

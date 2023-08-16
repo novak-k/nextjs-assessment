@@ -72,7 +72,6 @@ const Contact = () => {
                   id="inq1" 
                   name="Inquiry" 
                   value="inq1" 
-                  // checked="checked" 
                   className={styles.checkboxRound}
                 />
                 <label htmlFor="inq1" className={styles.label}>General Inquiry</label>

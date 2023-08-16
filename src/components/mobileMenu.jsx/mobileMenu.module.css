@@ -1,0 +1,70 @@
+.mobileMenuWrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 200;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  z-index: -1;
+}
+
+.mobileMenu {
+  display: flex;
+  flex-direction: column;
+  background-color: black;
+  color: white;
+
+  transition: all 1s ease;
+}
+
+.wrapperH{
+  min-height: 4rem;
+}
+
+.logo{
+  position: absolute;
+  top: 2rem;
+  left: 1rem;
+
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: white;
+}
+
+.mobileLink {
+  padding: 1rem;
+  text-decoration: none;
+  color: white;
+}
+
+.closeButton {
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+.closeIcon {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url('/closeIcon.svg') no-repeat center center;
+  background-size: contain;
+}
