@@ -20,15 +20,15 @@ const Contact = () => {
           <ReachUs />
   
           <div className={styles.socialContainer}>
-            <a href={'https://twitter.com/'} className={styles.link}> 
+            <a href={'https://twitter.com/'} className={styles.link} target='_blank'> 
               <Image src="/twitter.svg" width={15} height={15} className={styles.icon} alt="twitter" />
             </a>
 
-            <a href={'https://www.instagram.com/'} className={styles.link}> 
+            <a href={'https://www.instagram.com/'} className={styles.link} target='_blank'> 
               <Image src="/insta.svg" width={18} height={18} className={styles.icon} alt="insta" />
             </a>
 
-            <a href={'https://www.reddit.com/'} className={styles.link}> 
+            <a href={'https://www.reddit.com/'} className={styles.link} target='_blank'> 
               <Image src="/discord.svg" width={15} height={15} className={styles.icon} alt="discord" />
             </a>
           </div>
@@ -43,22 +43,22 @@ const Contact = () => {
             <form className={styles.form}>
               <div className={styles.inputWrapper}>
                 <div className={styles.inputGroup}>
-                  <label for="name" className={styles.label}>First Name</label>
+                  <label htmlFor="name" className={styles.label}>First Name</label>
                   <input id="name" type="text" placeholder="John" className={styles.input} />
                 </div>
                 <div className={styles.inputGroup}>
-                  <label for="lastName" className={styles.label}>Last Name</label>
+                  <label htmlFor="lastName" className={styles.label}>Last Name</label>
                   <input id="lastName" type="text" placeholder="Doe" className={styles.input} />
                 </div>
               </div>
         
               <div className={styles.inputWrapper}>
                 <div className={styles.inputGroup}>
-                  <label for="email" className={styles.label}>Email</label>
+                  <label htmlFor="email" className={styles.label}>Email</label>
                   <input id="email" type="email" className={styles.input} />
                 </div>
                 <div className={styles.inputGroup}>
-                  <label for="telNo" className={styles.label}>Phone Number</label>
+                  <label htmlFor="telNo" className={styles.label}>Phone Number</label>
                   <input id="telNo" type="tel" className={styles.input} />
                 </div>
               </div>
@@ -66,46 +66,54 @@ const Contact = () => {
             <p className={styles.inquiryTitle}>Select Subject?</p>
 
             <div className={styles.inquiryWrapper}> 
-              <input
-                type="checkbox" 
-                id="inq1" 
-                name="Inquiry" 
-                value="inq1" 
-                checked="checked" 
-                className={styles.checkboxRound}
-              />
-              <label for="inq1" className={styles.label}>General Inquiry</label>
+              <div className={styles.checkboxContainer}>
+                <input
+                  type="checkbox" 
+                  id="inq1" 
+                  name="Inquiry" 
+                  value="inq1" 
+                  // checked="checked" 
+                  className={styles.checkboxRound}
+                />
+                <label htmlFor="inq1" className={styles.label}>General Inquiry</label>
+              </div>
 
-              <input
-                type="checkbox"
-                id="inq2"
-                name="Inquiry" 
-                value="inq2" 
-                className={styles.checkboxRound}
-              />
-              <label for="inq2" className={styles.label}>General Inquiry</label>
+              <div className={styles.checkboxContainer}>
+                <input
+                  type="checkbox"
+                  id="inq2"
+                  name="Inquiry" 
+                  value="inq2" 
+                  className={styles.checkboxRound}
+                />
+                <label htmlFor="inq2" className={styles.label}>General Inquiry</label>
+              </div>
 
-              <input 
-                type="checkbox" 
-                id="inq3" 
-                name="Inquiry" 
-                value="inq3" 
-                className={styles.checkboxRound}
-              />
-              <label for="inq3" className={styles.label}>General Inquiry</label>
+              <div className={styles.checkboxContainer}>
+                <input 
+                  type="checkbox" 
+                  id="inq3" 
+                  name="Inquiry" 
+                  value="inq3" 
+                  className={styles.checkboxRound}
+                />
+                <label htmlFor="inq3" className={styles.label}>General Inquiry</label>
+              </div>
 
-              <input 
-                type="checkbox" 
-                id="inq4" 
-                name="Inquiry" 
-                value="inq4" 
-                className={styles.checkboxRound}
-              />
-              <label for="inq4" className={styles.label}>General Inquiry</label>
+              <div className={styles.checkboxContainer}>
+                <input 
+                  type="checkbox" 
+                  id="inq4" 
+                  name="Inquiry" 
+                  value="inq4" 
+                  className={styles.checkboxRound}
+                />
+                <label htmlFor="inq4" className={styles.label}>General Inquiry</label>
+              </div>
             </div>
 
             <div className={styles.textAreaWrapper}>
-              <label for="textArea" className={styles.labelMessage}>Message</label>
+              <label htmlFor="textArea" className={styles.labelMessage}>Message</label>
               <textarea
                 id="textArea"
                 className={styles.textArea}

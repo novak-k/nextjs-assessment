@@ -7,12 +7,14 @@
 }
 
 .title {
-  font-size: 40px;
+  font-size: 24px;
+  line-height: 36px;
   font-weight: 700;
 }
 
 .desc{
   font-size: 18px; 
+  line-height: 24px;
   font-weight: normal; 
   color: #717171;
 }
@@ -58,10 +60,6 @@
   padding: 6px;
 }
 
-/* .link:hover {
-  cursor: url(/hand.svg), pointer;
-} */
-
 .link:nth-child(2n){
   background-color: white;
 }
@@ -91,8 +89,8 @@
 }
 
 .formContainer {
-  height: 400px;
-  width: 600px;
+  /* height: 400px; */
+  /* width: 600px; */
 
   padding: 30px 20px;
   border-radius: 10px;
@@ -203,4 +201,124 @@
   position: absolute;
   transform: rotate(-29.75deg) translateX(17rem) translateY(8rem);
   z-index: 10;
+}
+
+@media only screen and (max-width: 1200px) {
+  .wrapper {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .contactContainer{
+    width: 500px;
+  }
+
+  .contactInfo{
+    display: flex;
+    flex-direction: column;
+
+    margin: 0 auto;
+  }
+
+  .elipsBig{
+    left: 310px;
+    top: -185px;
+  }
+
+  .elipsSm{
+    left: 337px;
+    top: -239px;
+  }
+
+  .socialContainer{
+    margin: 0 auto;
+    gap: 40px;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+   .container{
+    padding: 20px;
+  }
+
+  .contactContainer{
+    padding: 10px 10px;
+    width: 400px;
+  }
+
+  .elipsBig{
+    left: 219px;
+    top: -164px;
+  }
+
+  .elipsSm{
+    left: 242px;
+    top: -214px;
+  }
+
+  .link{
+    z-index: 11;
+  }
+
+  .formContainer{
+    padding: 10px 10px;
+  }
+
+  .inputWrapper{
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+  }
+
+  .inputGroup{
+    width: 100%;
+  }
+
+  .inquiryWrapper{
+    flex-wrap: wrap;
+    margin: 0 auto;
+  }
+  
+  .checkboxContainer{
+    flex: 0 0 calc(50%);
+    padding: 2px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .inquiryTitle, .formBtnWr{
+    margin: 0 auto;
+  }
+
+  .textAreaWrapper{
+    margin: 0 auto;
+    width: 100%;
+  }
+
+ .letter {
+    width: 140px;
+    height: 120px;
+    transform: rotate(-29.75deg) translateX(7rem) translateY(3rem);
+  }
+}
+
+@media only screen and (max-width: 480px) {
+ .contactContainer{
+    width: 300px;
+  }
+
+  .elipsBig{
+    left: 116px;
+    top: -190px;
+  }
+
+  .elipsSm{
+    left: 149px;
+    top: -272px;
+  }
+
+  .inputWrapper{
+    width: 300px;
+  }
 }

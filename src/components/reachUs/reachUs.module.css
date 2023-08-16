@@ -14,8 +14,27 @@
   font-size: 16px;
   font-weight: 400;
   margin-top: 16px;
+  z-index: 100;
 }
 
 .icon {
   margin: 0 10px;
+}
+
+@media only screen and (max-width: 1200px) {
+  .container {
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .container{
+    width: 280px;
+  }
+}
+
+@media only screen and (max-width: 480px) {
+  .textItem{
+    align-items: flex-start;
+  }
 }

@@ -48,7 +48,7 @@ export default function RootLayout({ children }) {
 
       </head>
       {/* <body className={`${inter.variable} ${poppins.variable}`}> */}
-      <body className={inter.className}>
+      <body className={inter.className} suppressHydrationWarning={true}>
         <ThemeProvider>
           <div className="container">
             <Navbar />
