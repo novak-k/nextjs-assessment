@@ -15,7 +15,7 @@ This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-opti
 ## Description
 
 - [Next.js Documentation](https://nextjs.org/docs) - used during the implementation of the project.
-- [DEMO LINK]([https://nextjs.org/learn](https://nextjs-assessment-sigma.vercel.app/contact)) - project deployed on Vercel.
+- [DEMO LINK](https://nextjs-assessment-sigma.vercel.app/contact) - project deployed on Vercel.
 
 ## Technologies
 
